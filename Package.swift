@@ -19,7 +19,8 @@ let package = Package(
 			path: "Source",
 			swiftSettings: [
 				.define("PERMISSION_BLUETOOTH"),
-				.define("PERMISSION_PHOTOS")
+				.define("PERMISSION_PHOTOS"),
+				.define("PERMISSION_CAMERA")
 			]
 		),
 	]
