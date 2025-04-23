@@ -16,7 +16,11 @@ let package = Package(
 		// Targets can depend on other targets in this package and products from dependencies.
 		.target(
 			name: "Permission",
-			path: "Source"
+			path: "Source",
+			swiftSettings: [
+				.define("PERMISSION_BLUETOOTH"),
+				.define("PERMISSION_PHOTOS")
+			]
 		),
 	]
 )
